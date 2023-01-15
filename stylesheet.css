@@ -1,3 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
 .home {
     background-image: url(dock.jpg);
-}}
+    font-family: 'Bangers';
+  }
+
+.container {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 67%;
+    left: 17%;
+    color: black;
+    background-color: rgba(219, 214, 214, 0.811);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .text-block-right {
+    position: absolute;
+    bottom: 50%;
+    left: 65%;
+    color: black;
+    background-color: rgba(219, 214, 214, 0.811);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: large;
+  }
+  
+.homechris {
+    position: fixed;
+    bottom: 0px;
+    left: 25%;
+}
+
+.content {
+    position: fixed;
+    bottom: 10%;
+    color: black;
+    padding: 4%;
+  }
+
+  .center {
+    position: fixed;
+    bottom: 14.5%;
+    left: 35%;
+  }
+
+  .play-btn {
+    width: 25%;
+    height: 10%;
+  }
+
+  .standchris {
+    position: fixed;
+    bottom: 0px;
+    left: 10%;
+  }
+
+  .speech-bubble {
+    font-size: 150%;
+    width: 60%; 
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: #ceb38ae1;
+    position: absolute;
+    right: 5%;
+    border-radius: 10px;
+    top: 27%;
+    text-align: center;
+ }
+
+ .yesbutton {
+  font-size: 125%;
+  background-color: rgba(219, 214, 214, 0.811);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: 25%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 29.5%;
+  border-radius: 10px;
+ }
+
+ .nobutton {
+  font-size: 125%;
+  background-color: rgba(219, 214, 214, 0.811);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 25%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 30.0%; 
+  border-radius: 10px;
+ }
+
+ .characterreveal {
+  background-image: url(final.png);
+  font-family: 'Bangers';
+  background-size: cover;
+ }
+
+ .finalchris {
+  position: fixed;
+  bottom: 0px;
+  right: 5%;
+  height: 60%;
+ }
+
+ .isyourcharacter {
+  font-size: 150%;
+  width: 40%; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: #ceb38ae1;
+  position: absolute;
+  left: 5%;
+  border-radius: 10px;
+  top: 7%;
+  text-align: center;
+ }
+
+ .character {
+  position: fixed;
+  bottom: 18%;
+  left: 18%;
+  height: 60%;
+ }
+
+ .tryagain {
+  font-size: 125%;
+  background-color: rgba(219, 214, 214, 0.811);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 45%;
+  margin-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 40%;
+  border-radius: 10px;
+ }
