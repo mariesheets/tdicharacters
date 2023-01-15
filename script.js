@@ -20,9 +20,9 @@ questions[15] = {"question": "do they practice martial arts?", "answers": {"answ
 questions[16] = {"question": "are they a self proclaimed jock?", "answers": {"answer1": "yes", "next_question1": 17, "answer2": "no", "next_question2": "DJ"}}
 questions[17] = {"question": "do they know surfer lingo?", "answers":{"answer1": "yes", "next_question1": "Geoff", "answer2": "no", "next_question2": "Tyler"}}
 questions[18] = {"question": "are they always found in a pair?", "answers": {"answer1": "yes", "next_question1": 19, "answer2": "no", "next_question2": 20}}
-questions[19] = {"question": "are they the forgotten, overlooked one?", "answers": {"answer1": "yes", "next_question1": "is your character Sadie?", "answer2":"no", "next_question2": "is your character Katie?"}}
-questions[20] = {"question": "are they mean?", "answers": {"answer1": "yes", "next_question1": 21, "answer2": "no", "next_question2": "is your character Bridgette?"}}
-questions[21] = {"question": "are they athletic?", "answers": {"answer1": "yes", "next_question1": "is your character Eva?", "answer2": "no", "next_question2": "is your character Courtney?"}}
+questions[19] = {"question": "are they the forgotten, overlooked one?", "answers": {"answer1": "yes", "next_question1": "Sadie", "answer2":"no", "next_question2": "Katie"}}
+questions[20] = {"question": "are they mean?", "answers": {"answer1": "yes", "next_question1": 21, "answer2": "no", "next_question2": "Bridgette"}}
+questions[21] = {"question": "are they athletic?", "answers": {"answer1": "yes", "next_question1": "Eva", "answer2": "no", "next_question2": "Courtney"}}
 
 var current_question = questions[1]
 
@@ -60,6 +60,10 @@ if (answer == "yes") {
         console.log("boo")
         yesbox.onclick= window.location.href = 'ezekiel.html'
     }
+    if (current_question['answers']['next_question1'] == "Eva"){
+        console.log("boo")
+        yesbox.onclick= window.location.href = 'eva.html'
+    }
     if (current_question['answers']['next_question1'] == "Harold"){
         console.log("boo")
         yesbox.onclick= window.location.href = 'harold.html'
@@ -67,6 +71,10 @@ if (answer == "yes") {
     if (current_question['answers']['next_question1'] == "Geoff"){
         console.log("boo")
         yesbox.onclick= window.location.href = 'geoff.html'
+    }
+    if (current_question['answers']['next_question1'] == "Sadie"){
+        console.log("boo")
+        yesbox.onclick= window.location.href = 'sadie.html'
     }
     else{
         current_question = questions[current_question['answers']['next_question1']]
@@ -93,6 +101,14 @@ if (answer == "yes") {
             console.log("boo")
             nobox.onclick= window.location.href = 'leshawna.html'
         }
+        if (current_question['answers']['next_question2'] == "Courtney"){
+            console.log("boo")
+            nobox.onclick= window.location.href = 'courtney.html'
+        }
+        if (current_question['answers']['next_question2'] == "Bridgette"){
+            console.log("boo")
+            nobox.onclick= window.location.href = 'bridgette.html'
+        }
         if (current_question['answers']['next_question2'] == "Duncan"){
             console.log("boo")
             nobox.onclick= window.location.href = 'duncan.html'
@@ -104,6 +120,10 @@ if (answer == "yes") {
         if (current_question['answers']['next_question2'] == "Tyler"){
             console.log("boo")
             nobox.onclick= window.location.href = 'tyler.html'
+        }
+        if (current_question['answers']['next_question2'] == "Katie"){
+            console.log("boo")
+            nobox.onclick= window.location.href = 'katie.html'
         }
         else {
         current_question = questions[current_question['answers']['next_question2']]
